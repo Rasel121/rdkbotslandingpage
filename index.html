@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RDK BOTS Landing Page</title>
+    <!-- tailwind css cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesme cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <style>
+      @keyframes spin-glow {
+        to {
+          background-position: 200% center;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-black capitalize">
+    <div class="fixed inset-0 opacity-30 -z-10">
+      <div
+        class="w-96 h-96 bg-purple-500 blur-3xl rounded-full animate-pulse absolute -top-16 -left-16"
+      ></div>
+      <div
+        class="w-96 h-96 bg-blue-500 rounded-full blur-3xl animate-pulse absolute top-72 right-0"
+      ></div>
+      <div
+        class="w-96 h-96 bg-red-500 rounded-full blur-3xl animate-pulse absolute -bottom-10 left-1/2"
+      ></div>
+    </div>
+
+    <!-- navigation bar started -->
+    <header
+      class="fixed top-0 z-[1001] bg-white/5 backdrop-blur-xl w-full py-5"
+    >
+      <div
+        class="container mx-auto flex justify-between items-center px-2 md:px-0"
+      >
+        <!-- nav menu -->
+        <nav class="flex items-center gap-5">
+          <!-- logo -->
+          <div>
+            <h2 class="text-3xl font-extrabold text-white">RDK Bot</h2>
+          </div>
+          <ul class="hidden md:flex gap-3 text-lg text-white/65">
+            <li>
+              <a href="#" class="hover:text-white transition-all duration-300"
+                >Docs</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition-all duration-300"
+                >Template</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition-all duration-300"
+                >Priching</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- nav btn  -->
+        <div class="flex items-center gap-5">
+          <a href="#" class="text-white text-xl">Sign In</a>
+          <a
+            href="#"
+            class="text-xl py-2 px-4 bg-white text-black rounded-lg hover:bg-white/90 transition-all duration-300"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- hero area started -->
+    <section class="mt-28 md:mt-48 mb-48">
+      <div class="px-2 lg:px-16 container mx-auto flex flex-col items-center">
+        <div class="md:flex items-center gap-2 justify-center md:mb-12 hidden">
+          <div class="bg-green-500 w-2 h-2 rounded-full animate-pulse"></div>
+          <p class="text-white first-letter:lowercase">
+            v1.0.0 - live in production
+          </p>
+        </div>
+        <div>
+          <h2
+            class="text-white text-6xl md:text-9xl text-center font-extrabold mb-8 md:mb-16"
+          >
+            build bots at lighting speed
+          </h2>
+        </div>
+        <div class="md:w-1/2 text-center flex justify-center mb-16">
+          <p class="text-white/70 text-3xl">
+            The most powerful platform for creating, deploying, and scaling
+            Telegram bots. Zero config. Instant deploys.
+          </p>
+        </div>
+        <div
+          class="mb-20 flex flex-col md:flex-row w-full gap-2 justify-center"
+        >
+          <a
+            href="#"
+            class="text-black font-semibold bg-white hover:bg-gray-200 transition-all duration-300 py-3 px-6 rounded-sm text-xl inline-block text-center"
+          >
+            start building
+            <i class="fa-solid fa-arrow-right ml-1 mt-2"></i>
+          </a>
+          <a
+            href="#"
+            class="text-white text-xl font-semibold bg-white/10 hover:bg-white/20 border border-white/30 py-3 px-6 rounded-sm text-center transition-all duration-300"
+            ><i class="fa-solid fa-play mr-1"></i> view demo</a
+          >
+        </div>
+        <div>
+          <i
+            class="fa-solid fa-angle-down text-xl text-white/40 animate-bounce"
+          ></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- terminal area started -->
+    <section class="mb-48">
+      <div class="container mx-auto px-2 lg:px-16">
+        <div class="bg-white/5 h-full rounded-xl border border-white/10 p-10">
+          <div class="flex gap-2 items-center mb-8">
+            <div class="h-3 w-3 bg-red-500 rounded-full"></div>
+            <div class="h-3 w-3 bg-yellow-500 rounded-full"></div>
+            <div class="h-3 w-3 bg-green-500 rounded-full"></div>
+            <i class="fa-solid fa-terminal text-white/30 ml-3"></i>
+            <p class="text-white/30">terminal</p>
+          </div>
+          <div class="">
+            <div class="text-white/60">
+              <span class="text-xl mr-2">$</span> <span>rdkbots</span>
+            </div>
+            <div class="text-blue-400">
+              <span class="text-sm mr-2">→</span>
+              <span class="first-letter:uppercase"> Welcome to rdk bots</span>
+            </div>
+            <div class="text-white/60">
+              <span class="text-sm mr-2">?</span>
+              <span class="first-letter:uppercase">What do you want to do?</span
+              ><span class="text-white">➤ Create a new bot</span>
+            </div>
+            <div class="text-white/60">
+              <span class="text-xl mr-2">?</span>
+              <span>enter your bot token</span>
+            </div>
+            <div>
+              <p class="text-white">12345345:ABCDJKFAHLJKBFASDBJ</p>
+            </div>
+            <div class="text-blue-400">
+              <span class="text-sm mr-2">→</span>
+              <span class="first-letter:uppercase"> validating token...</span>
+            </div>
+            <div class="text-green-500">
+              <span class="text-xl mr-2">✓</span>
+              <span>Bot verified: @your_bot</span>
+            </div>
+            <div class="text-blue-400">
+              <span class="text-sm mr-2">→</span>
+              <span class="first-letter:uppercase">
+                setting up your workspace ...</span
+              >
+            </div>
+            <div class="text-green-500">
+              <span class="text-xl mr-2">✓</span>
+              <span>project initialized</span>
+            </div>
+            <div class="text-green-500">
+              <span class="text-xl mr-2">✓</span>
+              <span>bot deployed and live</span>
+            </div>
+            <div class="w-2 h-5 bg-white animate-pulse"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- you need area started -->
+    <section class="mb-48">
+      <div class="xl:container mx-auto px-2 lg:px-16">
+        <div class="mb-16">
+          <h2
+            class="text-center text-white font-bold text-5xl md:text-7xl md:leading-20"
+          >
+            Everything you need, <br />
+            nothing you don't
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <!-- deploy  -->
+          <div
+            class="p-10 lg:pr-16 bg-white/5 border border-white/10 rounded-xl flex flex-col gap-8 transform hover:-translate-y-2 transition-all duration-500"
+          >
+            <span
+              class="w-10 h-10 bg-blue-300/30 rounded-lg flex items-center justify-center"
+              ><i class="fa-solid fa-bolt text-blue-500/70 text-2xl"></i
+            ></span>
+            <h3 class="text-white text-4xl">instant deploy</h3>
+            <p class="text-xl text-white/50">
+              Deploy your bot in under 300ms. No config files, no complicated
+              setup.
+            </p>
+          </div>
+          <!-- card 2 -->
+          <div
+            class="p-10 lg:pr-16 bg-white/5 border border-white/10 rounded-xl flex flex-col gap-4 transform hover:-translate-y-2 transition-all duration-500"
+          >
+            <span
+              class="w-10 h-10 bg-pink-300/40 rounded-lg flex items-center justify-center"
+            >
+              <i
+                class="fa-solid fa-arrow-trend-up text-pink-500/70 text-xl"
+              ></i>
+            </span>
+            <h3 class="text-white text-4xl">Auto-scaling</h3>
+            <p class="text-xl text-white/50">
+              Handles 1 or 1 million users. Resources scale automatically with
+              demand.
+            </p>
+          </div>
+          <!-- card 3 -->
+          <div
+            class="p-10 lg:pr-16 bg-white/5 border border-white/10 rounded-xl flex flex-col gap-4 transform hover:-translate-y-2 transition-all duration-500"
+          >
+            <span
+              class="w-10 h-10 bg-green-300/30 text-green-500 rounded-lg flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"
+                />
+              </svg>
+            </span>
+            <h3 class="text-white text-4xl">instant deploy</h3>
+            <p class="text-xl text-white/50">
+              Deploy your bot in under 300ms. No config files, no complicated
+              setup.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- resourses area started -->
+    <section class="mb-48">
+      <div class="container mx-auto px-2 lg:px-16">
+        <div class="mb-16">
+          <h2 class="text-5xl lg:text-7xl text-white font-bold text-center">
+            Resources & Status
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <!-- card 1 -->
+          <div
+            class="bg-white/5 border border-white/5 flex flex-col lg:p-8 p-5 gap-4 rounded-md hover:-translate-y-2 transition-all duration-500"
+          >
+            <span
+              class="h-9 w-9 flex items-center justify-center rounded bg-green-500/20"
+              ><i class="fa-solid fa-chart-line text-green-500"></i
+            ></span>
+            <h3 class="text-white text-3xl font-bold">system status</h3>
+            <p class="text-white/65 text-lg">
+              Check our system status and uptime in real-time.
+            </p>
+            <a
+              href="#"
+              class="text-xl text-blue-500 font-normal hover:text-blue-400 transition-all duration-300"
+              >visit status page
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+          <!-- card 2 -->
+          <div
+            class="bg-white/5 border border-white/5 flex flex-col lg:p-8 p-5 gap-4 rounded-md hover:-translate-y-2 transition-all duration-500"
+          >
+            <span
+              class="h-9 w-9 flex items-center justify-center rounded bg-blue-500/20"
+            >
+              <i class="fa-solid fa-book-open text-blue-500"></i>
+            </span>
+            <h3 class="text-white text-3xl font-bold">Documentation</h3>
+            <p class="text-white/65 text-lg">
+              Learn how to build codes and manage your bots efficiently.
+            </p>
+            <a
+              href="#"
+              class="text-xl text-blue-500 font-normal hover:text-blue-400 transition-all duration-300"
+              >Read Documentation
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+          <!-- card 3 -->
+          <div
+            class="bg-white/5 border border-white/5 flex flex-col lg:p-8 p-5 gap-4 rounded-md hover:-translate-y-2 transition-all duration-500"
+          >
+            <span
+              class="h-9 w-9 flex items-center justify-center rounded bg-pink-500/20"
+            >
+              <i class="fa-solid fa-code text-pink-500"></i>
+            </span>
+            <h3 class="text-white text-3xl font-bold">system status</h3>
+            <p class="text-white/65 text-lg">
+              Check our system status and uptime in real-time.
+            </p>
+            <a
+              href="#"
+              class="text-xl text-blue-500 font-normal hover:text-blue-400 transition-all duration-300"
+            >
+              view examples
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- sales area started -->
+    <section class="mb-48">
+      <div class="container mx-auto px-2 lg:px-16">
+        <div class="text-center mb-20">
+          <h2 class="text-5xl lg:text-7xl font-bold text-white mb-5">
+            simple, transparent pricing
+          </h2>
+          <p class="text-white/50 text-xl">start free, scale as you grow.</p>
+        </div>
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 space-y-8 md:space-y-0 md:space-x-8"
+        >
+          <!-- card 1 -->
+          <div
+            class="bg-white/5 p-10 border border-white/10 rounded-xl transition-transform duration-300 hover:-translate-y-2"
+          >
+            <h3 class="text-white text-3xl font-bold mb-3">hobby</h3>
+            <p class="text-white/60 text-lg mb-5">perfect for side projects</p>
+            <div class="mb-6">
+              <span class="text-white text-5xl font-bold">$0</span
+              ><span class="text-white/70">/Months</span>
+            </div>
+            <div class="flex flex-col gap-3 mb-8">
+              <span class="text-white/80 text-lg"
+                ><i class="fa-solid fa-check text-green-500"></i> Unlimited
+                bots</span
+              >
+              <span class="text-white/80 text-lg"
+                ><i class="fa-solid fa-check text-green-500"></i> no
+                limits</span
+              >
+              <span class="text-white/80 text-lg"
+                ><i class="fa-solid fa-check text-green-500"></i> community
+                support
+              </span>
+              <span class="text-white/80 text-lg"
+                ><i class="fa-solid fa-check text-green-500"></i> dvanced
+                analytics
+              </span>
+            </div>
+            <button
+              class="bg-white/10 w-full py-3 text-white font-bold text-lg capitalize rounded-lg hover:bg-white/15 transition-all duration-300"
+            >
+              start free
+            </button>
+          </div>
+          <!-- card 2 -->
+          <div
+            class="bg-black p-10 border gradi rounded-2xl relative before:content-[''] before:absolute before:-inset-0.5 before:bg-[length:200%_200%] before:bg-gradient-to-t before:from-purple-600 before:via-blue-500 before:to-purple-600 before:rounded-2xl before:opacity-75 before:z-[-1] hover:before:animate-[spin-glow_3s_linear_infinite] transition-all duration-300 hover:-translate-y-2"
+          >
+            <div class="flex items-center justify-between">
+              <h3 class="text-white text-3xl font-bold mb-3">pro</h3>
+              <span class="bg-blue-500/35 text-blue-500 rounded-md p-1"
+                ><i class="fa-solid fa-star"></i> populer</span
+              >
+            </div>
+            <p class="text-white/60 text-lg mb-5">For growing teams</p>
+            <div class="mb-6">
+              <span class="text-white text-5xl font-bold">$29</span
+              ><span class="text-white/70">/Months</span>
+            </div>
+            <div class="flex flex-col gap-3 mb-8">
+              <span class="text-white/80 text-lg"
+                ><i class="fa-solid fa-check text-green-500"></i> Unlimited
+                bots</span
+              >
+              <span class="text-white/80 text-lg"
+                ><i class="fa-solid fa-check text-green-500"></i> Unlimited
+                messages/month
+              </span>
+              <span class="text-white/80 text-lg"
+                ><i class="fa-solid fa-check text-green-500"></i> Priority
+                support
+              </span>
+              <span class="text-white/80 text-lg"
+                ><i class="fa-solid fa-check text-green-500"></i> dvanced
+                analytics
+              </span>
+              <span class="text-white/80 text-lg"
+                ><i class="fa-solid fa-check text-green-500"></i> Private
+                deployment
+              </span>
+            </div>
+            <button
+              class="bg-white w-full py-3 text-black font-bold text-lg capitalize rounded-lg hover:bg-white/85 transition-all duration-300"
+            >
+              Get Started
+            </button>
+          </div>
+          <!-- card 3 -->
+          <div
+            class="bg-white/5 p-10 border border-white/10 rounded-xl transition-transform duration-300 hover:-translate-y-2"
+          >
+            <h3 class="text-white text-3xl font-bold mb-3">Enterprise</h3>
+            <p class="text-white/60 text-lg mb-5">For large organizations</p>
+            <div class="mb-6">
+              <span class="text-white text-5xl font-bold">Custom</span
+              ><span class="text-white/70"></span>
+            </div>
+            <div class="flex flex-col gap-3 mb-8">
+              <span class="text-white/80 text-lg"
+                ><i class="fa-solid fa-check text-green-500"></i> Everything in
+                Pro
+              </span>
+              <span class="text-white/80 text-lg"
+                ><i class="fa-solid fa-check text-green-500"></i> Unlimited
+                messages
+              </span>
+              <span class="text-white/80 text-lg"
+                ><i class="fa-solid fa-check text-green-500"></i> Dedicated
+                support
+              </span>
+              <span class="text-white/80 text-lg"
+                ><i class="fa-solid fa-check text-green-500"></i> SLA guarantee
+              </span>
+              <span class="text-white/80 text-lg"
+                ><i class="fa-solid fa-check text-green-500"></i> Custom
+                contracts
+              </span>
+            </div>
+            <button
+              class="bg-white/10 w-full py-3 text-white font-bold text-lg capitalize rounded-lg hover:bg-white/15 transition-all duration-300"
+            >
+              Contact Sales
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- review area started -->
+    <section class="mb-48">
+      <div class="container mx-auto px-2 lg:px-20 space-y-16">
+        <div class="text-center space-y-8">
+          <h2 class="text-5xl lg:text-7xl font-bold text-white">
+            loved by developers
+          </h2>
+          <p class="text-white/50 text-xl">
+            join thousands building the future of bot developments
+          </p>
+        </div>
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 space-y-8 md:space-y-0 md:space-x-10"
+        >
+          <!-- card 1  -->
+          <div
+            class="bg-white/5 p-5 rounded-xl border border-white/5 space-y-5 transition-transform duration-300 hover:-translate-y-2"
+          >
+            <div class="space-x-4 flex items-center">
+              <img
+                src="https://i.pravatar.cc/100?img=3"
+                alt=""
+                class="rounded-full w-14 h-14"
+              />
+              <div class="space-y-1">
+                <h3 class="text-white font-semibold text-2xl">Alex Rivera</h3>
+                <span class="text-white/50 text-xl">@alexcodes</span>
+              </div>
+            </div>
+            <div>
+              <p class="text-white/70 text-xl">
+                "Finally, a platform that just works. No more wrestling with
+                configs or server management."
+              </p>
+            </div>
+          </div>
+          <!-- card 1  -->
+          <div
+            class="bg-white/5 p-5 rounded-xl border border-white/5 space-y-5 transition-transform duration-300 hover:-translate-y-2"
+          >
+            <div class="space-x-4 flex items-center">
+              <img
+                src="https://i.pravatar.cc/100?img=3"
+                alt=""
+                class="rounded-full w-14 h-14"
+              />
+              <div class="space-y-1">
+                <h3 class="text-white font-semibold text-2xl">Alex Rivera</h3>
+                <span class="text-white/50 text-xl">@alexcodes</span>
+              </div>
+            </div>
+            <div>
+              <p class="text-white/70 text-xl">
+                "Finally, a platform that just works. No more wrestling with
+                configs or server management."
+              </p>
+            </div>
+          </div>
+          <!-- card 1  -->
+          <div
+            class="bg-white/5 p-5 rounded-xl border border-white/5 space-y-5 transition-transform duration-300 hover:-translate-y-2"
+          >
+            <div class="space-x-4 flex items-center">
+              <img
+                src="https://i.pravatar.cc/100?img=3"
+                alt=""
+                class="rounded-full w-14 h-14"
+              />
+              <div class="space-y-1">
+                <h3 class="text-white font-semibold text-2xl">Alex Rivera</h3>
+                <span class="text-white/50 text-xl">@alexcodes</span>
+              </div>
+            </div>
+            <div>
+              <p class="text-white/70 text-xl">
+                "Finally, a platform that just works. No more wrestling with
+                configs or server management."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ready area started -->
+    <section class="mb-48">
+      <div class="container mx-auto px-2 lg:px-20 space-y-10 text-center">
+        <h2 class="text-5xl lg:text-7xl text-white font-bold">
+          ready to build?
+        </h2>
+        <p class="text-white/50 text-xl">start for free. scale infinitely.</p>
+        <button
+          class="bg-white text-2xl text-black/85 font-semibold py-4 px-8 rounded-xl"
+        >
+          Launch Your First Bot <i class="fa-solid fa-rocket"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- footer area started -->
+    <footer class="">
+      <div
+        class="container mx-auto px-2 lg:px-20 flex justify-between items-center flex-col md:flex-row"
+      >
+        <div class="space-y-1 text-center md:text-start">
+          <h3 class="text-white text-2xl font-semibold">Rdkbots</h3>
+          <p class="text-white/50 text-lg">
+            &copy; 2025 Rdkbots. All rights reserved.
+          </p>
+        </div>
+        <ul class="flex gap-4 text-lg">
+          <li>
+            <a
+              href="#"
+              class="text-white/50 hover:text-white transition-all duration-300"
+              >privecy</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white/50 hover:text-white transition-all duration-300"
+              >terms</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white/50 hover:text-white transition-all duration-300"
+              >status</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white/50 hover:text-white transition-all duration-300"
+              ><i class="fa-brands fa-github"></i> github</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
